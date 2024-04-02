@@ -21,7 +21,9 @@ require('_header.php');
 <p>Com uma abordagem acessível e amigável, o blog busca tornar a tecnologia compreensível e empolgante para todos, desde entusiastas ávidos até iniciantes. Seja você um geek de tecnologia em busca das últimas novidades ou alguém que deseja aprender mais sobre como a tecnologia está moldando nosso mundo, o "DashTecnology" é o seu destino definitivo para ficar à frente das tendências tecnológicas.</p>
 </article>
 
-<aside></aside>
+<aside>
+Veja Mais Artigos
+</aside>
 
 <?php
 // Inclui o rodapé do documento

@@ -51,7 +51,9 @@ require('_header.php');
                         A evolução dos celulares é uma história de inovação contínua e progresso tecnológico. Desde os dias dos tijolões analógicos até os smartphones ultramodernos de hoje, esses dispositivos têm sido uma força motriz por trás da transformação da sociedade moderna. À medida que continuamos nossa jornada rumo a um futuro cada vez mais conectado, é emocionante imaginar as possibilidades infinitas que os celulares ainda têm a oferecer.</p>   
 </article>
 
-<aside></aside>
+<aside>
+    Veja Mais Artigos
+</aside>
 
 <?php
 // Inclui o rodapé do documento
