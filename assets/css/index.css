@@ -1,0 +1,41 @@
+.article, .viewed > div {
+    background-color: #eee;
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+    cursor: pointer;
+    border-radius: .3rem;
+    font-size: 75%;
+}
+
+.article:hover, .viewed > div:hover {
+    background-color: #ddd;
+}
+
+.article img, .viewed img {
+    width: 100%;
+    height: auto;
+    border-radius: .35rem .35rem 0 0;
+}
+
+.article div, .viewed>div>div {
+    padding: 0 1rem;
+}
+
+.viewed h5, .viewed p {
+    margin: .5rem 0;
+}
+
+/* @media screen and (min-width: 768px) {
+
+    .article {
+        flex-direction: row;
+    }
+
+    .article img {
+        width: 6rem;
+        height: auto;
+        border-radius: .35rem 0 0 .35rem;
+    }
+   
+} */

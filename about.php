@@ -22,8 +22,11 @@ require('_header.php');
 </article>
 
 <aside>
-Veja Mais Artigos
-</aside>
+    <?php
+// Mostra os artigos mais visualizados
+    require('widgets/_mostviewed.php');
+    ?>
+    </aside>
 
 <?php
 // Inclui o rodapé do documento
