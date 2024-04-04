@@ -1,2 +1,0 @@
-# DashTecnology
- fullstack
