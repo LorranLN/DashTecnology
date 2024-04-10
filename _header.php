@@ -88,12 +88,12 @@ if (isset($page['js']))
                 <i class="fa-solid fa-house fa-fw"></i>
                 <span>Início</span>
             </a>
-            
+     
             <a href="new_article.php" title="Criar Artigo">
                 <i class="fa-solid fa-plus"></i>
                  <span>Novo Artigo</span>
             </a>
-
+                
             <a href="about.php" title="Sobre agente">
                 <i class="fa-solid fa-circle-info fa-fw"></i>
                 <span>Sobre</span>

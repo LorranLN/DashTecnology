@@ -74,7 +74,7 @@ $article = <<<ART
 
 <div class="article">
     <h2>{$art['art_title']}</h2>
-    <small>Por class="authordate">Por {$art['emp_name']} em {$art['art_datebr']}.</small>
+    <small>Por {$art['emp_name']} em {$art['art_datebr']}.</small>
     <div>{$art['art_content']}</div>
 </div>
 
@@ -108,7 +108,7 @@ switch ($art['emp_type']) {
 // Monta a view do autor para a <aside>
 $aside_author = <<<HTML
 
-<div class="aside-author">
+<div class="aside_author">
     <img src="{$art['emp_photo']}" alt="{$art['emp_name']}">
     <h4>{$art['emp_name']} </h4>
     <ul>
