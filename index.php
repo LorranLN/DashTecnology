@@ -33,7 +33,8 @@ FROM article
 		AND art_status = 'on'        	
 
 -- Ordenados pela data de publicação com os mais recentes primeiro
-	ORDER BY art_date DESC;
+	ORDER BY art_date DESC
+    limit 3;
 
 SQL;
 
@@ -73,7 +74,7 @@ require('_header.php');
     <p>A evolução da tecnologia é uma jornada fascinante que atravessa séculos de inovação e descoberta. Desde os primórdios da civilização humana, os seres humanos têm buscado maneiras de simplificar tarefas, aumentar a eficiência e melhorar a qualidade de vida por meio da tecnologia.</p>
     <p>No início, as ferramentas mais básicas, como pedras afiadas e paus, eram usadas para caçar e se proteger. Com o tempo, surgiram avanços como a roda e a agricultura, que revolucionaram a maneira como vivemos e interagimos com o mundo ao nosso redor.</p>
     <p> No entanto, foi a Revolução Industrial que realmente marcou o início de uma era de inovação tecnológica sem precedentes. A introdução de máquinas a vapor, locomotivas e fábricas automatizadas transformou completamente a maneira como produzimos bens e nos deslocamos.</p>
-    <img src="https://img.freepik.com/vetores-gratis/conceito-de-design-isometrico-de-gadgets-retro-2x2-com-evolucao-de-computador-3d-isolado_1284-27855.jpg?size=626&ext=jpg" alt="Evolução dos computadores">    
+    <img src="assets/img/imageindex.png" alt="Evolução dos computadores">    
     <p>No século XX, testemunhamos avanços incríveis em diversas áreas, desde a eletrônica até a computação e a biotecnologia. A invenção do rádio, televisão e telefone trouxe o mundo para nossas casas, enquanto os computadores pessoais e a internet revolucionaram a maneira como compartilhamos informações e nos comunicamos.</p>
     <p>Hoje, estamos na era da tecnologia digital, onde a computação em nuvem, inteligência artificial e dispositivos conectados estão moldando o mundo ao nosso redor de maneiras inimagináveis. Desde smartphones que cabem no bolso até carros autônomos e assistentes virtuais inteligentes, a tecnologia está se tornando cada vez mais integrada em todos os aspectos de nossas vidas.</p>
     <p>No entanto, com todos esses avanços, também enfrentamos desafios significativos, como questões de privacidade, segurança cibernética e desigualdade digital. À medida que continuamos avançando, é crucial que consideremos não apenas os benefícios da tecnologia, mas também suas ramificações sociais, éticas e ambientais.</p>
@@ -83,13 +84,19 @@ require('_header.php');
 
 <aside>
 <?php echo $articles ?>
+<button class="bottonarticle">
+    <a href="all_article.php" title="Todos os artigos">
+        <i class="fa-solid fa-house fa-fw"></i>
+       <span>Todos os artigos</span>
+    </a>
+</button>
 
     <?php
     // Mostra os artigos mais visualizados
     require('widgets/_mostviewed.php');
+    ?>
 
     
-    ?>
 </aside>
 
 <?php require('_footer.php'); ?>

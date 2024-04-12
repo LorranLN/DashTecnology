@@ -1,0 +1,51 @@
+.article-list {
+   
+}
+
+.article-list .article {
+    margin-bottom: 1rem;
+    background-color: #ddd;
+}
+.article-list img {
+    width: 100%;
+}
+.article-list div {
+
+    padding: 1rem;
+}
+.article-list h4,.article-list p {
+
+    margin: 0;
+}
+
+@media screen and (min-width:575px) {
+
+    .article-list .article {
+       display: flex;
+    }
+    .article-list img {
+        width: 6rem;
+
+    }
+    .article-list div {
+    
+        padding: 1rem;
+    }
+    .article-list h4,.article-list p {
+    
+        margin: 0;
+    }
+}
+
+
+/*  
+  <div class="article" onclick="location.href = 'view.php?id={$art['art_id']}'">
+            <img src="{$art['art_thumbnail']}" alt="{$art['art_title']}">
+            <div>
+                <h4>{$art['art_title']}</h4>
+                <p>{$art['art_summary']}</p>
+            </div>
+        </div>
+
+
+*/

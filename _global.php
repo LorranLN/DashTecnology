@@ -174,11 +174,11 @@ function view_article($article_id)
     return <<<HTML
 
         <div class="article" onclick="location.href = 'view.php?id={$art['art_id']}'">
-        <img src="{$art['art_thumbnail']}" alt="{$art['art_title']}">
-        <div>
-            <h4>{$art['art_title']}</h4>
-            <p>{$art['art_summary']}</p>
-        </div>
+            <img src="{$art['art_thumbnail']}" alt="{$art['art_title']}">
+            <div>
+                <h4>{$art['art_title']}</h4>
+                <p>{$art['art_summary']}</p>
+            </div>
         </div>
 
     HTML;

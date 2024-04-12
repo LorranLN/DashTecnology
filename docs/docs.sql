@@ -84,10 +84,10 @@ CREATE TABLE contact (
 INSERT INTO employee (
     emp_id, emp_photo, emp_name, emp_birth, emp_email, emp_password, emp_type
 ) VALUES 
-('1', 'https://randomuser.me/api/portraits/lego/5.jpg', 'Lorran', '2001-03-02', 'lorran@adm.com', SHA1('senha123'), 'admin'),
-('2', 'https://randomuser.me/api/portraits/women/33.jpg', 'Marineuza Siriliano', '1984-09-20', 'mari@neuza.com', SHA1('senha123'), 'author'),
-('3', 'https://randomuser.me/api/portraits/men/40.jpg', 'Setembrino Trocatapas', '1999-10-21', 'set@brino.com', SHA1('senha123'), 'moderator'),
-('4', 'https://randomuser.me/api/portraits/men/41.jpg', 'Hermenildo Sirigildo', '2001-12-24', 'herme@gildo.com', SHA1('senha123'), 'author');
+('1', 'https://randomuser.me/api/portraits/men/1.jpg', 'Lorran', '2001-03-02', 'lorran@adm.com', SHA1('senha123'), 'admin'),
+('2', 'https://randomuser.me/api/portraits/women/54.jpg', 'Marta Pereira', '1995-09-20', 'mart@pereira.com', SHA1('senha123'), 'author'),
+('3', 'https://randomuser.me/api/portraits/men/20.jpg', 'Leandro Artinez', '1989-10-21', 'leandro@art.com', SHA1('senha123'), 'moderator'),
+('4', 'https://randomuser.me/api/portraits/men/72.jpg', 'Marcos Alencar', '1986-12-24', 'marcos@alencar.com', SHA1('senha123'), 'author');
 
 -- Popular tabela 'article'.
 INSERT INTO article
@@ -258,7 +258,7 @@ VALUES
     );
 
 -- Popular tabela 'comment'.
-INSERT INTO comment 
+/* INSERT INTO comment 
 (
     cmt_article,
     cmt_social_id,
@@ -291,3 +291,4 @@ INSERT INTO comment
 );
 
 -- Popular tabela 'contact'.
+*/

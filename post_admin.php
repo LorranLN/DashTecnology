@@ -68,7 +68,7 @@ require('_header.php');
 ?>
 
 <article>
-     <!-- Conteúdo inútil só para testes visuais -->
+     <!-- Conteúdo  -->
     <h2>A Jornada da Inovação: A Evolução da Tecnologia ao Longo dos Séculos</h2> 
     <p>A evolução da tecnologia é uma jornada fascinante que atravessa séculos de inovação e descoberta. Desde os primórdios da civilização humana, os seres humanos têm buscado maneiras de simplificar tarefas, aumentar a eficiência e melhorar a qualidade de vida por meio da tecnologia.</p>
     <p>No início, as ferramentas mais básicas, como pedras afiadas e paus, eram usadas para caçar e se proteger. Com o tempo, surgiram avanços como a roda e a agricultura, que revolucionaram a maneira como vivemos e interagimos com o mundo ao nosso redor.</p>

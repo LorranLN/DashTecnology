@@ -26,6 +26,11 @@
     margin: .5rem 0;
 }
 
+article img {
+    width: 100%;
+}
+
+
 
  /*article  p,img,h2 {
 
@@ -50,5 +55,4 @@
         border-radius: .35rem 0 0 .35rem;
     }
    
-} */
-
+} */ 

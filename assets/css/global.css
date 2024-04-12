@@ -31,11 +31,11 @@ body {
 /* Fundo da página */
 body {
     background-color: rgba(255, 166, 0, 0.6);
-    background-image: url('../img/back01.png');
+    background-image: url('../img/logo02.png');
     background-attachment: fixed;
     background-position: center;
     background-repeat: repeat;
-    /* background-size: 30%; */
+     background-size: 5%; 
 }
 
 /* Elementos de uso geral */
@@ -67,7 +67,7 @@ a:hover {
 
 /* Cabeçalho (header) */
 header {
-    background-color: #000000;
+    background-color: rgb(0, 0, 0);
     display: flex;
     flex-direction: column;
 }
@@ -99,7 +99,7 @@ header img {
 /* Formulário de pesquisa no cabeçalho */
 
 .header-search {
-    background-color: orange;
+    background-color: rgb(0, 217, 255);
     padding: 1rem;
 }
 
@@ -128,7 +128,7 @@ header img {
 
 /* Menu principal (nav) */
 nav {
-    background-color: orange;
+    background-color: rgb(0, 217, 255);
     border-top: 1px dotted #000;
     border-bottom: 1px dotted #000;
     display: flex;
@@ -292,6 +292,13 @@ Telas de 425px ou mais...
         margin-right: .35rem;
     }
 
+    .bottonarticle {
+        margin-right: 30px;
+        margin-left: 50px;
+        text-align: center;
+    }
+       
+    
 }
 
 /* Oculta elementos de login do usuario por padrão */
@@ -411,6 +418,22 @@ Telas de 768px ou mais...
 
 }
 
+.errorpage, .destaque {
+color: red;
+}
+    
+.errorpage, .home {
 
-     
-      
+    color:blue;
+}
+
+
+
+.images {
+    
+    display: flex;
+    justify-content: center; /* Alinha horizontalmente ao centro */
+    align-items: center; /* Alinha verticalmente ao centro */
+    height: 40vh;  
+    
+}

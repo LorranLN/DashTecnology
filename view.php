@@ -180,7 +180,7 @@ while ($aart = $res->fetch_assoc()) :
 
 <div onclick="location.href = 'view.php?id={$aart['art_id']}'">
     <h5>{$aart['art_title']}</h5>
-    <p><small title="{$aart['art_summary']}">{$art_summary}</small></p>
+    <p><small title="{$aart['art_summary']}">{$aart['art_summary']}</small></p>
 </div>
 
 HTML;
