@@ -84,19 +84,13 @@ require('_header.php');
 
 <aside>
 <?php echo $articles ?>
-<button class="bottonarticle">
-    <a href="all_article.php" title="Todos os artigos">
-        <i class="fa-solid fa-house fa-fw"></i>
-       <span>Todos os artigos</span>
-    </a>
-</button>
 
-    <?php
+<?php
+
     // Mostra os artigos mais visualizados
-    require('widgets/_mostviewed.php');
+    require('widgets/_mostviewed.php'); 
     ?>
 
-    
 </aside>
 
 <?php require('_footer.php'); ?>

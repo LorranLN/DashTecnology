@@ -6,7 +6,7 @@ require("_global.php");
 // Configurações desta página
 $page = array(
     "title" => "Procurando...",
-    "css" => "index.css"
+    "css" => "search_list.css"
 );
 
 // inicializa a view
@@ -78,7 +78,7 @@ if ($query != '') :
         // Loop para obter e exibir os artigos
         while ($art = $res->fetch_assoc())
             $search_view .= view_article($art['art_id']);
-
+        
     // Se não achou nada:
     else :
         $search_view .= "<p class=\"center\">Nenhum conteúdo encontrado com '{$query}'.</p>";
@@ -100,10 +100,12 @@ require('_header.php');
 ?>
 
 <article>
+    <div class="search-list">
     <?php
     // Exibe a view
     echo $search_view;
     ?>
+    </div>
 </article>
 
 <aside>

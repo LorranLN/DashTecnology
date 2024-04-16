@@ -52,7 +52,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     <p><?php echo $feedback ?></p>
 
-    <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" enctype="multipart/form-data">
+    <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
         <input type="hidden" name="userid" value="<?php echo $user['emp_id']?>">
         <label for="titulo">Título:</label><br>
         <input type="text" id="titulo" name="titulo"><br><br>
@@ -63,12 +63,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <label for="conteudo">Conteúdo:</label><br>
         <textarea id="conteudo" name="conteudo" rows="5" cols="50"></textarea><br><br>
 
-        <!-- Botão original para adicionar imagem via link -->
-        <label for="imagem">Link para Imagem Thumbnail:</label><br>
+        <label for="imagem">Link da Imagem:</label><br>
         <input type="text" id="imagem" name="imagem"><br><br>
-
-        <!-- Botão para adicionar imagem no texto -->
-        <button type="button" id="btnAddImage">Adicionar endereço de imagem ao artigo</button><br><br>
 
         <label for="data_publicacao">Data de Publicação:</label><br>
         <input type="datetime-local" id="data_publicacao" name="data_publicacao"><br><br>
@@ -76,40 +72,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <input type="submit" value="Publicar">
     </form>
 
+    </form>
+
 </article>
 
 <aside>
-    <button type="button" onclick="location.href='logout.php'">Fazer logout</button>
+    <button type="button" onclick="location.href='logout.php'">fazer logout</button>
 </aside>
-
-<script>
-    var lastClickPos = 0;
-
-    // Função para inserir tag de imagem no campo de conteúdo onde clicado
-    document.getElementById("conteudo").addEventListener("click", function(event) {
-        // Verifica se o alvo do clique foi o campo de conteúdo
-        if (event.target === document.getElementById("conteudo")) {
-            // Obtém a posição do cursor
-            lastClickPos = document.getElementById("conteudo").selectionStart;
-        }
-    });
-
-    // Função para inserir tag de imagem no último local onde o mouse clicou
-    document.getElementById("btnAddImage").addEventListener("click", function() {
-        // Insere uma tag de imagem no campo de conteúdo na posição do último clique
-        var contentField = document.getElementById("conteudo");
-        var imageTag = '<img src="URL_DA_IMAGEM" alt="Descrição da Imagem">';
-        contentField.value = contentField.value.slice(0, lastClickPos) + imageTag + contentField.value.slice(lastClickPos);
-    });
-
-    // Função para adicionar imagem do dispositivo
-    document.getElementById("btnAddImageDevice").addEventListener("click", function() {
-        document.getElementById("inputImage").click();
-    });
-</script>
 
 <?php
 // Inclui o rodapé do documento
 require('_footer.php');
 ?>
-

@@ -75,17 +75,16 @@ word-break: break-word !important;
 </article>
 
 <aside>
-    <h2>Veja +</h2>
-    <a href="contacts.php">Contatos</a>
-   
-    <P><a href="about.php">Sobre</a></P>
     <div>
-        <h2>Veja Mais Artigos</h2>
       <?php
     // Lista de redes sociais
    // require('widgets/_socialaside.php');
+    
+   // Mostra os artigos mais visualizados
+   require('widgets/_mostviewed.php');
     ?>
     </div>
+    
 </aside>
 
 <?php

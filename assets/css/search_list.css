@@ -1,0 +1,45 @@
+.search-list {
+
+    margin-bottom: 1rem;
+    background-color: white
+}
+
+.search-list .article {
+    margin-bottom: 1rem;
+    background-color: #ddd;
+}
+.search-list img {
+    width: 100%;
+}
+.search-list div {
+
+    border: 1px solid #ccc; /* Borda de 1px sólida cinza */
+    padding: 20px; /* Espaçamento interno de 20 pixels */
+    margin-bottom: 20px; /* Margem inferior de 20 pixels */
+    background-color: #f9f9f9; /* Cor de fundo cinza claro */
+    border-radius: 5px; /* Bordas arredondadas */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra leve */
+}
+.search-list h4,.search-list p {
+
+    margin: 0;
+}
+
+@media screen and (min-width:575px) {
+
+    .search-list .article {
+       display: flex;
+    }
+    .search-list img {
+        width: 6rem;
+
+    }
+    .search-list div {
+    
+        padding: 1rem;
+    }
+    .search-list h4,.search-list p {
+    
+        margin: 0;
+    }
+}

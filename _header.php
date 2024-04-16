@@ -94,6 +94,11 @@ if (isset($page['js']))
                  <span>Novo Artigo</span>
             </a>
                 
+             <a href="all_article.php" title="Todos os artigos">
+                <i class="fa-solid fa-paperclip"></i>
+                <span>Todos os artigos</span>
+             </a>
+            
             <a href="about.php" title="Sobre agente">
                 <i class="fa-solid fa-circle-info fa-fw"></i>
                 <span>Sobre</span>
