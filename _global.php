@@ -114,7 +114,7 @@ $conn->query('SET character_set_client=utf8');
 $conn->query('SET character_set_results=utf8');
 
 // Seta os dias da semana e meses do MySQL para "português do Brasil"
-$conn->query('SET GLOBAL lc_time_names = pt_BR');
+//$conn->query('SET GLOBAL lc_time_names = pt_BR');
 $conn->query('SET lc_time_names = pt_BR');
 
 /*********************************
